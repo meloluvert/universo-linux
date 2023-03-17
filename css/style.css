@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline:0;
+}
+header{
+    height: 150px;
+    
+}
+
+.titulo-logo{
+    width: 50%;
+    float: left;
+}
+nav{
+    width: 50%;
+    float:right;
+    
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#menu ul li{
+    display: inline-block;
+    padding: auto;
+    
+}
+
+#menu ul li a{
+    text-decoration: none;
+}
+
+main{
+    background-color: #959595;
+}
+article img{
+    border-radius: 5%;
+}
+footer{
+    background-color: #455a64;
+}
