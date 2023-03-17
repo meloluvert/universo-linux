@@ -3,31 +3,75 @@
     margin: 0;
     padding: 0;
     outline:0;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    
+    
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+:root{
+    --marrom:#4A4343;
+    --cinza:#959595;
+    --azul-pastel:#455a64;
+}
+h1, h2{
+    text-transform: uppercase;
+} 
+h2{
+    font-size: 2.4rem;
 }
 header{
-    height: 150px;
-    
+    height: 14vh;
+    background: var(--azul-pastel);
+    display: flex;
+    align-items: center;
+}
+#titulo-principal{
+    width: auto;
+    display: inline-block;
+    margin: 5% 0;
 }
 
 .titulo-logo{
     width: 50%;
     float: left;
+    display: flex;
+    align-items: center;
 }
-nav{
+p{
+    font-size: 14pt;
+    text-align: justify;
+    display: block;
+}
+.titulo-logo img{
+    float: left;
+    margin: 5%;
+    width: 100px;
+}
+.titulo-article{
+    margin: 3% 0;
+}
+#menu{
     width: 50%;
     float:right;
     
 }
-nav ul{
+#menu ul{
     list-style-type: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 #menu ul li{
     display: inline-block;
     padding: auto;
-    
+    font-size: 1.2rem;
+}
+img {
+    float: left;
+    margin: 1%;
 }
 
 #menu ul li a{
@@ -35,11 +79,47 @@ nav ul{
 }
 
 main{
-    background-color: #959595;
+    background-color: var(--cinza);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 81vh;
 }
-article img{
+section{
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+
+article.card{
+    background: var(--marrom);
+    height: 400px;
+    padding: 2%;
+    width: 75%;
+    height: 50vh;
+    margin: auto;
     border-radius: 5%;
+    
 }
+article.card img{
+    border-radius: 5%;
+    width: 11vw;
+
+}
+img#tux-distros{
+    float: none;
+    display: inline-block;
+    width: 50%;
+   text-align: center;
+}
+
 footer{
-    background-color: #455a64;
+    background-color: var(--azul-pastel);
+    height: 5vh;
+    display: flex;
+    justify-content: left;
+}
+footer img{
+    width: 2rem;
+    margin: 0 0.5%;
 }
