@@ -1,125 +1,188 @@
-*{
+/*Tags gerais*/
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline:0;
+    outline: 0;
     color: white;
     font-family: 'Inter', sans-serif;
-    
-    
 }
 
-  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-:root{
-    --marrom:#4A4343;
-    --cinza:#959595;
-    --azul-pastel:#455a64;
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --marrom: #4A4343;
+    --cinza: #959595;
+    --azul-pastel: #455a64;
 }
-h1, h2{
-    text-transform: uppercase;
-} 
-h2{
-    font-size: 2.4rem;
-}
-header{
+
+header {
     height: 14vh;
     background: var(--azul-pastel);
     display: flex;
     align-items: center;
 }
-#titulo-principal{
-    width: auto;
-    display: inline-block;
-    margin: 5% 0;
-}
-
-.titulo-logo{
-    width: 50%;
-    float: left;
-    display: flex;
-    align-items: center;
-}
-p{
-    font-size: 14pt;
-    text-align: justify;
-    display: block;
-}
-.titulo-logo img{
-    float: left;
-    margin: 5%;
-    width: 100px;
-}
-.titulo-article{
-    margin: 3% 0;
-}
-#menu{
-    width: 50%;
-    float:right;
-    
-}
-#menu ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-}
-#menu ul li{
-    display: inline-block;
-    padding: auto;
-    font-size: 1.2rem;
-}
-img {
-    float: left;
-    margin: 1%;
-}
-
-#menu ul li a{
-    text-decoration: none;
-}
-
-main{
-    background-color: var(--cinza);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+main {
     height: 81vh;
+    background-color: var(--cinza);
 }
-section{
-    width: 50%;
-    height: auto;
+
+h1,
+h2 {
+    text-transform: uppercase;
     text-align: center;
 }
 
-article.card{
-    background: var(--marrom);
-    height: 400px;
-    padding: 2%;
-    width: 75%;
-    height: 50vh;
-    margin: auto;
-    border-radius: 5%;
-    
+h2 {
+    font-size: 2.4rem;
 }
-article.card img{
+img {
     border-radius: 5%;
-    width: 11vw;
+}
+p {
+    font-size: 1.3rem;
+    text-align: justify;
+    display: block;
 
 }
-img#tux-distros{
-    float: none;
-    display: inline-block;
-    width: 50%;
-   text-align: center;
+a {
+    text-decoration: none;
 }
 
-footer{
+footer {
     background-color: var(--azul-pastel);
     height: 5vh;
     display: flex;
     justify-content: left;
 }
-footer img{
-    width: 2rem;
-    margin: 0 0.5%;
+
+/* Títulos, do site e dos articles */
+#titulo-principal {
+    width: auto;
+    display: inline-block;
+    margin: 5% 0;
+}
+
+#sectionIndex .titulo-article {
+    margin: 3% 0;
+}
+
+#main-distros .titulo-article {
+    padding: 1% 0;
+}
+.titulo-logo {
+    width: 50%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.titulo-logo img {
+    float: left;
+    margin: 5%;
+    width: 5rem;
+}
+
+/* Menus */
+#menu {
+    width: 50%;
+    float: right;
+
+}
+
+#menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#menu ul li {
+    display: inline-block;
+    padding: auto;
+    font-size: 1.7rem;
+}
+
+/* Articles */
+main#main-index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+section#sectionIndex {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+}
+
+section#grid-ranking {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 70vh;
+
+}
+
+article.card {
+    background: var(--marrom);
+    padding: 2%;
+    width: 75%;
+    margin: auto;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.card-index {
+    height: 70%;
+}
+
+article.card-distro {
+    width: 70%;
+    height: 95%;
+}
+
+/* Fotos/pictures */
+img#tux-distros {
+    display: inline-block;
+    width: 50%;
+}
+
+#torvalds-photo {
+    margin: 2%;
+    float: left;
+    border-radius: 30%;
+}
+
+/*nome e a logo da distro*/
+.nome-logo-distro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2% 0;
+}
+
+/*Nomes da distro*/
+.nome-distro {
+    width: 40%;
+    font-size: 2rem;
+}
+
+.logo-distro {
+    display: block;
+    width: 10%;
+}
+
+.wallpaper-distro {
+    display: block;
+    width: 55%;
+    margin: auto;
+}
+
+/* Redes socias no footer */
+footer img {
+    height: 70%;
+    margin: auto 0.5%;
+
 }
