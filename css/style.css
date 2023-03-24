@@ -11,20 +11,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 :root {
-    --marrom: #4A4343;
-    --cinza: #959595;
-    --azul-pastel: #455a64;
+    --third: #4A4343;
+    --second: #959595;
+    --primary: #455a64;
+
 }
 
 header {
-    height: 14vh;
-    background: var(--azul-pastel);
+    height: 7rem;
+    background: var(--primary);
     display: flex;
     align-items: center;
 }
 main {
     height: 81vh;
-    background-color: var(--cinza);
+    min-height: calc(100vh - 10rem);
+    background-color: var(--second);
 }
 
 h1,
@@ -50,8 +52,8 @@ a {
 }
 
 footer {
-    background-color: var(--azul-pastel);
-    height: 5vh;
+    background-color: var(--primary);
+    height: 3rem;
     display: flex;
     justify-content: left;
 }
@@ -103,7 +105,9 @@ footer {
     padding: auto;
     font-size: 1.7rem;
 }
-
+#menu ul li:hover a{
+    text-decoration: underline;
+}
 /* Articles */
 main#main-index {
     display: flex;
@@ -121,12 +125,13 @@ section#sectionIndex {
 section#grid-ranking {
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 70vh;
+    grid-template-rows: 50% 50%;
+    height:70vh;
 
 }
 
 article.card {
-    background: var(--marrom);
+    background: var(--third);
     padding: 2%;
     width: 75%;
     margin: auto;
@@ -176,7 +181,7 @@ img#tux-distros {
 
 .wallpaper-distro {
     display: block;
-    width: 55%;
+    width: 50%;
     margin: auto;
 }
 

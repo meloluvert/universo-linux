@@ -1,0 +1,25 @@
+@media(max-width:1151px) {
+    section#grid-ranking{
+        grid-template-columns:100%;
+        grid-template-rows: 25% 25% 25% 25%;
+        height: 90%;
+    }
+    main{
+        height: 1800px;
+    }
+    section#sectionIndex{
+        width: 100%;
+        padding: 1rem 0;
+    }
+    main#main-index{
+        display: block;
+    }
+
+    #sectionIndex .titulo-article{
+        margin:0;
+    }
+    #menu{
+        display: none;
+    }
+
+}
