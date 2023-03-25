@@ -31,9 +31,19 @@
     }
     #main-index{
         height: 1400px;
+        
     }
     #main-distros{
         height: 2200px;
+    }
+    #main-distros, #main-index{
+        padding-top: 7rem;
+    }
+    header{
+        position: fixed;
+        top:0;
+        width: 100%;
+        flex-wrap: wrap;
     }
 
 }

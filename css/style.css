@@ -74,7 +74,6 @@ footer {
 }
 .titulo-logo {
     width: 50%;
-    float: left;
     display: flex;
     align-items: center;
 }
@@ -85,29 +84,7 @@ footer {
     width: 5rem;
 }
 
-/* Menus */
-#menu {
-    width: 50%;
-    float: right;
 
-}
-
-#menu ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
-#menu ul li {
-    display: inline-block;
-    padding: auto;
-    font-size: 1.7rem;
-}
-#menu ul li:hover a{
-    text-decoration: underline;
-}
 /* Articles */
 main#main-index {
     display: flex;
