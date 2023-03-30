@@ -17,9 +17,7 @@
     #sectionIndex .titulo-article{
         margin:0;
     }
-    #menu{
-        display: none;
-    }
+   
     .card-index{
         height: 90%;
     }
@@ -44,6 +42,7 @@
         top:0;
         width: 100%;
         flex-wrap: wrap;
+        flex-flow: row wrap;
     }
 
 }

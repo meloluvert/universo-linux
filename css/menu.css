@@ -2,6 +2,7 @@
 #menu {
     width: 50%;
     float: right;
+    
 
 }
 
@@ -10,12 +11,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 
 }
 
 #menu ul li {
     display: inline-block;
-    padding: auto;
     font-size: 1.7rem;
 }
 #menu ul li:hover a{
@@ -50,9 +51,34 @@ input#checkmenu{
         width: 100%;
     }
     input#checkmenu:checked ~ #menu{
-        display: block;
+        display: flex;
     }
     #menu{
+        display: none;
+        height: calc(100vh - 7rem);
         width: 100%;
+        justify-content: right;
+        backdrop-filter: blur(5px);
+        transition: backdrop-filter 59s;
+        
+        
+        
+    }
+    #menu ul{
+        flex-wrap: wrap;
+        background-color: var(--primary);
+        background-color: rgba(69, 90, 100, 0.856);
+        height: 100%;
+        width: 50%;
+        align-content:flex-start;
+        /* justify-content: flex-start; */
+        padding-right: 2%;
+    }
+    #menu ul li{
+        width: 100%;
+        text-align: right;
+        display: block;
+        height: calc(7rem/3);
+        padding: 2% 0;
     }
 }
