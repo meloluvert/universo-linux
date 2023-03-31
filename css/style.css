@@ -164,8 +164,13 @@ img#tux-distros {
 }
 
 /* Redes socias no footer */
-footer img {
+footer a{
+    display: block;
     height: 70%;
     margin: auto 0.5%;
 
+}
+footer a img{
+    width: 100%;
+    height: 100%;
 }

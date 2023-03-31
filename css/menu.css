@@ -2,8 +2,6 @@
 #menu {
     width: 50%;
     float: right;
-    
-
 }
 
 #menu ul {
@@ -11,17 +9,18 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
-
 }
 
 #menu ul li {
     display: inline-block;
     font-size: 1.7rem;
 }
+
 #menu ul li:hover a{
     text-decoration: underline;
 }
+
+/*Menu responsivo*/
 input#checkmenu{
     display: none; 
 
@@ -37,61 +36,27 @@ input#checkmenu{
     margin-right: 3%;
     height: 100%;
 }
+/*para a navegação não encostar no título*/
 @media(max-width:1542px){
-    #menu{
-        margin-right: 1%;
+    #menu ul{
+        padding-right: 2%;
     }
     #menu ul li{
-        font-size: 1.6em;
+        font-size: 1.3em;
     }
 }
-@media(max-width:1151px){
 
-    .menuburguer{
-        display: flex;
-        width: 30px;
-        height: 30px;
-        flex-wrap: wrap;
-    }
-    .hamburguer{
-        display: block;
-        height: 5%;
-        background-color: #000;
-        width: 100%;
 
-        
-    }
-    input#checkmenu:checked ~ #menu{
-        display: flex;
-        backdrop-filter: blur(5px);
-    }
+@media(max-width:1261px){
+    /*menu vai desaparecer*/
     #menu{
         display: none;
-        
         height: calc(100vh - 7rem);
         width: 100%;
         justify-content: right;      
         
     }
-    input#checkmenu ~ #menu ul{
-        position: absolute;
-        right:-100%;
-        animation: appear;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
 
-        transition: right 3s;
-        
-    }
-    
-    
-    @keyframes appear {
-        100%{
-            right: 0;
-        }
-    }
-    
-    
     #menu ul{
         flex-wrap: wrap;
         background-color: var(--primary);
@@ -102,6 +67,26 @@ input#checkmenu{
         padding-right: 2%;
 
     }
+
+    /*Esconderemos a ul*/
+    input#checkmenu ~ #menu ul{
+        position: absolute;
+        right:-100%;
+        animation: appear;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+        transition: right 3s;
+        
+    }
+    
+    /*para que a ul, escondida à direita, apareça*/
+    @keyframes appear {
+        100%{
+            right: 0;
+        }
+    }
+    
+
     #menu ul li{
         width: 100%;
         text-align: right;
@@ -109,4 +94,50 @@ input#checkmenu{
         height: calc(7rem/3);
         padding: 2% 0;
     }
+
+    .menuburguer{
+        display: flex;
+        width: 30px;
+        height: 30px;
+        flex-wrap: wrap;
+    }
+
+    /*Animação*/
+    /*Quando apertarmos o label, o menu vai aparecer*/
+    input#checkmenu:checked ~ #menu{
+        display: flex;
+        backdrop-filter: blur(5px);
+    }
+    
+    /*para que rode quando clicar*/
+    input#checkmenu:checked ~ label .menuburguer{
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        rotate: 45deg;
+    }
+    input#checkmenu:checked ~ label #hamburguer1::before{
+        position: absolute;
+        rotate: -90deg;
+    }
+
+    
+    .hamburguer, .hamburguer::before{
+        display: block;
+        height: 5%;
+        background-color: #000;
+        width: 100%;
+        transition: rotate 1s;
+
+    }
+
+    .hamburguer::before{
+        display: block;
+        content:'';
+    }
+    
+    
+    
+    
+    
 }
