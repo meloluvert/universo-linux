@@ -16,22 +16,29 @@
     <header>
         <!--srcset=imagem alternativa-->
         <div class="titulo-logo">
-            <img src="img/linux.svg" alt="Tux, mascote do Linux" srcset="">
+            <img src="img/linux.svg" alt="Tux, mascote do Linux" srcset="" id="tux-logo">
             <h1 id="titulo-principal">
                 <a href="index.html">universolinux.com</a>
             </h1>
         </div>
+        <input type="checkbox" name="" id="checkmenu" >
+        <label for="checkmenu" id="labelmenu">
+            <div class="menuburguer">
+                <span class="hamburguer" id="hamburguer1"></span>
+                <span class="hamburguer" id="hamburguer2"></span>
+                <span class="hamburguer" id="hamburguer3"></span>
+            </div>
+        </label>
         <nav id="menu">
             <ul>
                 <li><a href="index.html">Página Inicial</a> </li>
                 <li><a href="ranking.html">Ranking de Distros</a> </li>
                 <li>História</li>
-
-
             </ul>
 
         </nav>
     </header>
+    
     <main id="main-distros">
         <h2 class="titulo-article">Ranking de Distros</h2>
         <section id="grid-ranking">
@@ -43,18 +50,20 @@
 
                     <img src="img/debian/debian-logo.svg" alt="" class="logo-distro">
                 </section>
-                <a href="https://ubuntu.com/download/desktop" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.debian.org/" target="_blank" rel="noopener noreferrer">
                     <img src="img/debian/debian-desktop.jpg" alt="" class="wallpaper-distro">
+                
                 </a>
-
 
             </article>
             <article class="card card-distro">
                 <section class="nome-logo-distro">
                     <h3 class="nome-distro">Ubuntu</h3>
+                    
                     <img src="img/ubuntu/ubuntu-logo.svg" alt="" class="logo-distro">
                 </section>
-                <img src="img/ubuntu/ubuntu-desktop.jpg" alt="" class="wallpaper-distro">
+                <a href="https://ubuntu.com/download/desktop" target="_blank" rel="noopener noreferrer">
+                <img src="img/ubuntu/ubuntu-desktop.jpg" alt="" class="wallpaper-distro"></a>
 
             </article>
             <article class="card card-distro">
@@ -62,16 +71,18 @@
                     <h3 class="nome-distro">Mint</h3>
                     <img src="img/mint/mint-logo.svg" alt="" class="logo-distro">
                 </section>
+                <a href="https://linuxmint.com/" target="_blank" rel="noopener noreferrer">
                 <img src="img/mint/mint-desktop.jpg" alt="" class="wallpaper-distro">
-
+                </a>
             </article>
             <article class="card card-distro">
                 <section class="nome-logo-distro">
                     <h3 class="nome-distro">Zorin</h3>
                     <img src="img/zorin/zorin-logo.svg" alt="" class="logo-distro">
                 </section>
+                <a href="https://zorin.com/os/" target="_blank" rel="noopener noreferrer">
                 <img src="img/zorin/zorin-desktop.jpg" alt="" class="wallpaper-distro">
-
+</a>
 
             </article>
         </section>
