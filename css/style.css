@@ -14,18 +14,22 @@
     --third: #4A4343;
     --second: #959595;
     --primary: #455a64;
-
+    --video-const:12;
 }
 
 header {
+
+        position: fixed;
+        top:0;
+        width: 100%;
     height: 7rem;
     background: var(--primary);
     display: flex;
     align-items: center;
 }
 main {
-    height: 81vh;
-    min-height: calc(100vh - 10rem);
+    padding-top: 7rem;
+    min-height: calc(100vh - 3rem);
     background-color: var(--second);
 }
 
@@ -38,6 +42,7 @@ h2 {
 h2 {
     font-size: 2.4rem;
 }
+input{display: none;}
 img {
     border-radius: 5%;
 }
@@ -162,6 +167,49 @@ img#tux-distros {
     width: 50%;
     margin: auto;
 }
+
+
+/*Configurão da pág história*/
+
+label[for="buttonSwitchLang"]{
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-image: url(../img/flags/american-flag.png);
+    background-size: cover;
+    border: #FFF 1px solid;
+    border-radius: 50%;
+    transition: background-image 1s;
+    position: absolute;
+    top: 7.5rem;
+    left: 10px;
+}
+
+#buttonSwitchLang:checked ~ #video-pt{
+    display: none;
+}
+#buttonSwitchLang:checked ~ label[for="buttonSwitchLang"]{
+    background-image: url(../img/flags/brazil-flag.png);
+}
+#buttonSwitchLang:checked ~ #video-us{
+    display: block;
+}
+#video-us{
+    display: none;
+}
+
+.video-yt{
+    max-width: 95%;
+    max-height: 600px;
+    width:calc(160px*7);
+    height:calc(90px*7);
+}
+#main-history{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* Redes socias no footer */
 footer a{

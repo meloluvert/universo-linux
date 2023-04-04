@@ -21,10 +21,7 @@
 }
 
 /*Menu responsivo*/
-input#checkmenu{
-    display: none; 
 
-}
 #labelmenu{
     width: 50%;
     display: flex;
